@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+
+  <fieldset>
+    <legend><b>ФИО</b></legend>
+    <p><label class="name">Имя:</label><input type="text"></p>
+    <p><label class="name">Фамилия:</label><input type="text"></p>
+    <p><label>Пол:</label><input name="gender" type="radio" value="m"><label>мужской</label>
+	<input name="gender" type="radio" value="w"><label>женский</label> </p>
+  	</fieldset>
+
+  	<fieldset>
+    <legend><b>Коротко о себе</b></legend>
+    <p><input type="date"><label class="pad">Дата рождения</label></p>
+    <p><input type="text"><label class="pad">Семейное положение</label></p>
+    <p><input type="text"><label class="pad">Социальный статус</label></p>
+    <p><input type="text" placeholder="+380-XX-XXX-XX-XX" required><label class="pad">Номер телефона</label></p>
+    <p><em>Опыт работы:</em>
+    <select>
+    <option>Без опыта</option>
+ 	<option>Полгода</option>
+ 	<option>1 год</option>
+ 	<option>Более 2 лет</option>
+	</select>
+	<p>Образование:</p>
+	<select size="2">
+	<option>Среднее</option>
+	<option>Неоконченное высшее</option>
+	<option>Высшее</option>
+	</select>
+    <p>Резюме:
+   	<input type="file">
+   	</p>
+   	<p><b>Ваши пожелания к работе:</b></p>
+   	<textarea cols="50" rows="10"></textarea>
+  	</fieldset>
+	<fieldset>
+		<legend><b>На каких языках программирования Вы умеете писать:</b></legend>
+		<p><input type="checkbox">C</p>
+		<p><input type="checkbox">C++</p>
+		<p><input type="checkbox">C#</p>
+		<p><input type="checkbox">PHP</p>
+		<p><input type="checkbox">JavaScript</p>
+	</fieldset>
+
+		<p>
+			<input type="submit" value="Отправить">
+			<input type="reset" value="Очистить">
+		</p>
+
+</form>
+</body>
+</html>
